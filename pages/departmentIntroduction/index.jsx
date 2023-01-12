@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function index() {
   return (
-    <div>
+    <main className='px-40 py-8'>
       <h1>hi</h1>
-    </div>
+    </main>
   );
 }

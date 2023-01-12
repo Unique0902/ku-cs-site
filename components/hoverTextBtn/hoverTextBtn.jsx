@@ -31,7 +31,13 @@ const HoverTextBtn = ({ btnText, location }) => {
       {isHovering && (
         <ul className='absolute flex flex-col items-center top-full left-0 bg-white w-full px-6 border border-black pb-1 rounded-b-xl'>
           {navMenuData[btnText].map((data) => (
-            <li key={data.name} className={smallBtnStyle}>
+            <li
+              key={data.name}
+              className={smallBtnStyle}
+              onClick={() => {
+                router.push(`${location}/${data.url}`);
+              }}
+            >
               {data.name}
             </li>
           ))}
