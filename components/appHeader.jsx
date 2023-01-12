@@ -1,8 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import HoverTextBtn from './hoverTextBtn/hoverTextBtn';
 export default function AppHeader() {
-  const btnStyle = 'py-4 hover:bg-slate-700 w-64 text-center';
+  const router = useRouter();
+  const handleClick = () => router.push('/');
   return (
     <header className=''>
       <section className='flex flex-row items-center justify-between px-40 py-8'>
@@ -12,9 +14,10 @@ export default function AppHeader() {
             alt={'logo'}
             width={500}
             height={500}
-            className={' h-20 w-52'}
+            className={' h-20 w-52 cursor-pointer'}
+            onClick={handleClick}
           />
-          <button className='flex flex-col gap-1'>
+          <button className='flex flex-col gap-1' onClick={handleClick}>
             <h2 className='font-sans font-bold text-black text-3xl hover:text-blue-300'>
               컴퓨터공학부
             </h2>
@@ -37,12 +40,15 @@ export default function AppHeader() {
         </div>
       </section>
       <nav className=' flex flex-row justify-center bg-gray-500 text-white font-sans font-semibold text-2xl border-b-2 border-b-gray-300 border-t-4 border-black'>
-        <HoverTextBtn btnText={'학과소개'} />
-        <HoverTextBtn btnText={'구성원'} />
-        <HoverTextBtn btnText={'학부'} />
-        <HoverTextBtn btnText={'대학원'} />
-        <HoverTextBtn btnText={'취업및진로'} />
-        <HoverTextBtn btnText={'열린마당'} />
+        <HoverTextBtn
+          btnText={'학과소개'}
+          location={'departmentIntroduction'}
+        />
+        <HoverTextBtn btnText={'구성원'} location={'member'} />
+        <HoverTextBtn btnText={'학부'} location={'department'} />
+        <HoverTextBtn btnText={'대학원'} location={'graduateSchool'} />
+        <HoverTextBtn btnText={'취업및진로'} location={'employmentAndCareer'} />
+        <HoverTextBtn btnText={'열린마당'} location={'openYard'} />
       </nav>
     </header>
   );

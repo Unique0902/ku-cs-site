@@ -1,9 +1,21 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { navMenuData } from '../../data/navMenuData';
-const HoverTextBtn = ({ btnText }) => {
+import { useRouter } from 'next/router';
+const HoverTextBtn = ({ btnText, location }) => {
   const [isHovering, setIsHovering] = useState(false);
-  const btnStyle =
-    'h-16 hover:bg-slate-700 w-64 text-center flex flex-row justify-center items-center z-50';
+  const [selectedBtn, setSelectedBtn] = useState();
+  const router = useRouter();
+  const checkSelectedBtn = () => {
+    const pathArr = router.pathname.split('/');
+    setSelectedBtn(pathArr[1]);
+    console.log(pathArr);
+  };
+  useEffect(() => {
+    checkSelectedBtn();
+  }, [router]);
+  const btnStyle = `h-16 hover:bg-slate-700 w-64 text-center flex flex-row justify-center items-center z-50 ${
+    selectedBtn === location && 'bg-gray-800'
+  }`;
   const smallBtnStyle =
     'text-black font-sans font-light text-lg py-1 hover:text-green-400 w-full';
   return (
@@ -11,6 +23,9 @@ const HoverTextBtn = ({ btnText }) => {
       className={`relative ${btnStyle}`}
       onMouseOver={() => setIsHovering(true)}
       onMouseOut={() => setIsHovering(false)}
+      onClick={() => {
+        router.push(location);
+      }}
     >
       {btnText}
       {isHovering && (
