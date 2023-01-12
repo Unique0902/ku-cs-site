@@ -27,9 +27,13 @@ export default function AppHeader() {
           <button className=' bg-slate-400 text-white text-2xl font-sans font-semibold rounded-xl px-4 py-3 hover:scale-105'>
             로그인
           </button>
-          <button className=' bg-green-800 text-white text-2xl font-sans font-semibold rounded-xl px-4 py-3 hover:scale-105'>
+          <a
+            href='https://www.konkuk.ac.kr/do/Index.do'
+            target='_blank'
+            className=' bg-green-800 flex justify-center items-center text-white text-2xl font-sans font-semibold rounded-xl px-4 py-3 hover:scale-105'
+          >
             건국대학교
-          </button>
+          </a>
         </div>
       </section>
       <nav className=' flex flex-row justify-center bg-gray-500 text-white font-sans font-semibold text-2xl border-b-2 border-b-gray-300 border-t-4 border-black'>
