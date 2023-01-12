@@ -1,11 +1,10 @@
 import React from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function AppFooter() {
   const textStyle = 'font-sans text-gray-600 font-normal text-base';
   return (
-    <footer className='relative flex flex-row gap-8 mx-20 py-8 border-t border-gray-300 mt-4'>
+    <footer className='relative flex flex-row gap-8 mx-40 py-8 border-t border-gray-300 mt-12'>
       <Image
         src={'/imgs/logo.png'}
         alt={'logo'}

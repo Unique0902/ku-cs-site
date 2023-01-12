@@ -5,7 +5,7 @@ export default function AppHeader() {
   const btnStyle = 'py-4 hover:bg-slate-700 w-64 text-center';
   return (
     <header className=''>
-      <section className='flex flex-row items-center justify-between px-20 py-8'>
+      <section className='flex flex-row items-center justify-between px-40 py-8'>
         <div className='flex flex-row items-center gap-6'>
           <Image
             src={'/imgs/logo.png'}
@@ -32,7 +32,7 @@ export default function AppHeader() {
           </button>
         </div>
       </section>
-      <nav className=' flex flex-row justify-center bg-gray-500 text-white font-sans font-semibold text-2xl border-b-2 border-b-white border-t-4 border-black'>
+      <nav className=' flex flex-row justify-center bg-gray-500 text-white font-sans font-semibold text-2xl border-b-2 border-b-gray-300 border-t-4 border-black'>
         <HoverTextBtn btnText={'학과소개'} />
         <HoverTextBtn btnText={'구성원'} />
         <HoverTextBtn btnText={'학부'} />
