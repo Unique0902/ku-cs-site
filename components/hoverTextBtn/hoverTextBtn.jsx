@@ -3,7 +3,7 @@ import { navMenuData } from '../../data/navMenuData';
 const HoverTextBtn = ({ btnText }) => {
   const [isHovering, setIsHovering] = useState(false);
   const btnStyle =
-    'h-16 hover:bg-slate-700 w-64 text-center flex flex-row justify-center items-center';
+    'h-16 hover:bg-slate-700 w-64 text-center flex flex-row justify-center items-center z-50';
   const smallBtnStyle =
     'text-black font-sans font-light text-lg py-1 hover:text-green-400 w-full';
   return (

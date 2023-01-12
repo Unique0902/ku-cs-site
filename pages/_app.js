@@ -1,3 +1,4 @@
+import AppFooter from '../components/appFooter';
 import AppHeader from '../components/appHeader';
 import '../styles/globals.css';
 
@@ -6,6 +7,7 @@ export default function App({ Component, pageProps }) {
     <>
       <AppHeader />
       <Component {...pageProps} />
+      <AppFooter />
     </>
   );
 }
