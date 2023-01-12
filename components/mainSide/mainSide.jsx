@@ -1,7 +1,9 @@
 import React from 'react';
 import MainSideBtn from '../mainSideBtn/mainSideBtn';
+import { useRouter } from 'next/router';
 
 export default function MainSide() {
+  const router = useRouter();
   return (
     <aside className='pt-8'>
       <div className='font-sans border-b border-gray-300 text-green-600 font-bold text-3xl flex justify-center  h-36 w-56 bg-cover bg-circleLogo relative'>
