@@ -8,7 +8,6 @@ const HoverTextBtn = ({ btnText, location }) => {
   const checkSelectedBtn = () => {
     const pathArr = router.pathname.split('/');
     setSelectedBtn(pathArr[1]);
-    console.log(pathArr);
   };
   useEffect(() => {
     checkSelectedBtn();
@@ -24,7 +23,7 @@ const HoverTextBtn = ({ btnText, location }) => {
       onMouseOver={() => setIsHovering(true)}
       onMouseOut={() => setIsHovering(false)}
       onClick={() => {
-        router.push(location);
+        router.push(`/${location}/${navMenuData[location].data[0].url}`);
       }}
     >
       {btnText}

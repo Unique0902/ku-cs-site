@@ -1,13 +1,9 @@
-import React from 'react';
-import MainSide from '../../components/mainSide/mainSide';
-import MainTitle from '../../components/mainTitle/mainTitle';
+import React, { useEffect } from 'react';
 import { useRouter } from 'next/router';
 export default function index() {
   const router = useRouter();
-  return (
-    <main className='px-40 flex flex-row gap-8'>
-      <MainSide />
-      <MainTitle />
-    </main>
-  );
+  useEffect(() => {
+    router.push('/departmentIntroduction/educationalGoal');
+  }, []);
+  return <h1>loading..</h1>;
 }
