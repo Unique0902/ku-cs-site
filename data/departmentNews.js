@@ -48,3 +48,4 @@ const departmentNewsData = [
     isNotice: false,
   },
 ];
+export { departmentNewsData };

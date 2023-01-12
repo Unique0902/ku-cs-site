@@ -50,3 +50,4 @@ const recruitmentInformationData = [
     isNotice: false,
   },
 ];
+export { recruitmentInformationData };

@@ -49,3 +49,4 @@ const departmentNoticeData = [
     isNotice: false,
   },
 ];
+export { departmentNoticeData };
