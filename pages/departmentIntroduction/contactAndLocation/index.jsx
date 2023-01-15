@@ -1,9 +1,9 @@
 import React from 'react';
-import MainLayout from '../../../components/mainLayout/mainLayout';
 import Image from 'next/image';
+import { getMainLayOut } from '../../../layouts/appLayout';
 export default function Index() {
   return (
-    <MainLayout>
+    <>
       <Image
         src={'/imgs/csMap.png'}
         alt={'csMap'}
@@ -125,6 +125,7 @@ export default function Index() {
           </p>
         </ul>
       </section>
-    </MainLayout>
+    </>
   );
 }
+getMainLayOut(Index);

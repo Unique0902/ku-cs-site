@@ -1,10 +1,10 @@
 import React from 'react';
 import FacultyHisoryRow from '../../../components/facultyHisoryRow';
-import MainLayout from '../../../components/mainLayout/mainLayout';
+import { getMainLayOut } from '../../../layouts/appLayout';
 
 export default function Index() {
   return (
-    <MainLayout>
+    <>
       <FacultyHisoryRow
         year={'2020'}
         firstRow={'학부: 컴퓨터공학부로 통합'}
@@ -57,6 +57,7 @@ export default function Index() {
         firstRow={'전자계산학과 1회 졸업생 배출'}
       />
       <FacultyHisoryRow year={'1979'} firstRow={'전자계산학과 신설'} />
-    </MainLayout>
+    </>
   );
 }
+getMainLayOut(Index);
