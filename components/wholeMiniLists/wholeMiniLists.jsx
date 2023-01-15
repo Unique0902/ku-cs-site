@@ -10,12 +10,14 @@ export default function WholeMiniLists({
 }) {
   return (
     <div className=' flex-1'>
-      <section className='flex flex-row justify-between pb-4 border-b border-b-gray-300 mb-2'>
-        <div className='flex font-sans font-semibold text-xl text-black flex-row items-center mb-2'>
-          <p className=' text-blue-400 border-t-4 border-t-blue-400 box-content'>
+      <section className='flex flex-row justify-between pb-4 border-b border-b-gray-300 mb-3'>
+        <div className='flex font-sans font-semibold text-xl text-black flex-row items-center mb-1'>
+          <p className=' text-blue-400 border-t-4 border-t-blue-400 box-content font-sans text-2xl font-semibold'>
             {frontTitle}
           </p>
-          <p className='border-t-4 border-t-transparent'>{backTitle}</p>
+          <p className='border-t-4 border-t-transparent font-sans text-2xl font-semibold'>
+            {backTitle}
+          </p>
         </div>
         {!isLink && (
           <button className='text-gray-400 font-semibold text-sm mt-5'>

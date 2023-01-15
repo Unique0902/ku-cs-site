@@ -34,7 +34,7 @@ const HoverTextBtn = ({ btnText, location }) => {
               key={data.name}
               className={smallBtnStyle}
               onClick={() => {
-                router.push(`${location}/${data.url}`);
+                router.push(`/${location}/${data.url}`);
               }}
             >
               {data.name}

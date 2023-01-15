@@ -6,7 +6,7 @@ export default function MainSide({ data, secondLocation, firstName }) {
     <aside className='pt-8'>
       <div className='font-sans border-b border-gray-300 text-green-600 font-bold text-3xl flex justify-center  h-36 w-56 bg-cover bg-circleLogo relative'>
         <div className='absolute left-0 top-0 h-full w-full bg-white bg-opacity-75'></div>
-        <p className='z-10 mt-8'>{firstName}</p>
+        <p className='z-10 mt-8 font-sans text-3xl'>{firstName}</p>
       </div>
       <ul className='flex flex-col'>
         {data.map((data) => (
