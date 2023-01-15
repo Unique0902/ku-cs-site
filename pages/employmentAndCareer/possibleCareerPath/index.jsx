@@ -1,4 +1,5 @@
 import React from 'react';
+import { getMainLayOut } from '../../../layouts/appLayout';
 
 export default function Index() {
   return (
@@ -7,3 +8,4 @@ export default function Index() {
     </div>
   );
 }
+getMainLayOut(Index);
