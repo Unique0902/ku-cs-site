@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { getMainLayOut } from '../../../layouts/appLayout';
+import SubTitle from '../../../components/subTitle';
 export default function Index() {
   return (
     <>
@@ -12,10 +13,9 @@ export default function Index() {
         className='w-full h-auto'
       />
       <section className='pt-12'>
-        <h2 className='pl-2 pb-5 font-sans text-green-700 text-4xl font-bold'>
-          컴퓨터공학부
-        </h2>
-        <ul className=' list-disc list-inside px-3 font-sans font-normal text-xl'>
+        <SubTitle text={'컴퓨터공학부'} />
+
+        <ul className=' list-disc list-inside px-3 font-sans font-normal text-xl mt-3'>
           <li>
             {
               '학과 사무실 : (우) (05029) 서울특별시 광진구 능동로 120 (화양동 1번지) 건국대학교 공과대학 A동 1층 1105호'
@@ -33,9 +33,7 @@ export default function Index() {
         />
       </section>
       <section className='pt-12'>
-        <h2 className='pl-2 pb-5 font-sans text-green-700 text-4xl font-bold'>
-          지하철 이용시
-        </h2>
+        <SubTitle text={'지하철 이용시'} />
         <table
           border={'1'}
           bordercolor={'blue'}
@@ -62,9 +60,7 @@ export default function Index() {
         </table>
       </section>
       <section className='pt-12'>
-        <h2 className='pl-2 pb-5 font-sans text-green-700 text-4xl font-bold'>
-          버스 이용시
-        </h2>
+        <SubTitle text={'버스 이용시'} />
         <table
           border={'1'}
           bordercolor={'blue'}
@@ -107,9 +103,7 @@ export default function Index() {
         </table>
       </section>
       <section className='pt-12'>
-        <h2 className='pl-2 pb-5 font-sans text-green-700 text-4xl font-bold'>
-          차량 이용시
-        </h2>
+        <SubTitle text={'차량 이용시'} />
         <ul className=' list-disc list-inside px-3 font-sans font-normal text-xl'>
           <li className=' font-semibold pb-2'>{'경부고속도로'}</li>
           <p>
