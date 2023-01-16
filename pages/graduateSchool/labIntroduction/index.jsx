@@ -26,6 +26,7 @@ export default function Index() {
         <ul className='font-sans text-xl text-black font-normal flex flex-col gap-2 list-inside list-disc'>
           {labData.map((data, index) => (
             <li
+              key={index}
               onClick={() => {
                 refArr[index].current.scrollIntoView({
                   behavior: 'smooth',
@@ -40,7 +41,7 @@ export default function Index() {
         </ul>
       </section>
       {labData.map((data, index) => (
-        <section className='pt-10 flex flex-col gap-2'>
+        <section key={index} className='pt-10 flex flex-col gap-2'>
           <SubTitle text={data.name} />
           <table ref={refArr[index]}>
             <tbody>
@@ -64,7 +65,7 @@ export default function Index() {
                 <td className={basicStyle}>
                   <ul className=' list-inside list-disc'>
                     {data.fields.map((field) => (
-                      <li>{field}</li>
+                      <li key={field}>{field}</li>
                     ))}
                   </ul>
                 </td>

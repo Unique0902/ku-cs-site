@@ -14,6 +14,7 @@ export default function DetailPage({ data, beforeData, nextData }) {
         {data &&
           data.img.map((im) => (
             <Image
+              key={im}
               src={im}
               alt={'img'}
               width={500}
