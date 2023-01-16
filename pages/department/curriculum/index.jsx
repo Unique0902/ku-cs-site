@@ -4,9 +4,9 @@ import SubTitle from '../../../components/subTitle';
 
 export default function Index() {
   const basicStyle =
-    'border border-black py-4 font-sans text-black text-lg font-normal';
+    'border border-black py-4 font-sans text-black text-lg font-normal max-xl:text-sm max-md:text-xs';
   const headStyle =
-    'border border-black py-4 font-sans text-black text-lg font-semibold bg-gray-100';
+    'border border-black py-4 font-sans text-black text-lg font-semibold bg-gray-100 max-xl:text-sm max-md:text-xs';
   return (
     <div>
       <section className='pt-6'>

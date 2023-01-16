@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function LinkList() {
   const btnStyle =
-    'font-sans font-normal h-12 text-gray-600 text-base border border-gray-400 hover:bg-blue-600 flex justify-center items-center hover:text-white font-semibold';
+    'font-sans font-normal h-12 text-gray-600 text-base max-md:text-sm border border-gray-400 hover:bg-blue-600 flex justify-center items-center hover:text-white font-semibold';
   return (
     <section className='grid grid-cols-2 gap-2'>
       <a

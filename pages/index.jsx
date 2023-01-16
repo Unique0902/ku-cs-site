@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main>
       <HomeBanner />
-      <section className='px-40 py-8 flex flex-row gap-6'>
+      <section className='max-2xl:px-16 max-md:px-4 px-40 py-8 flex flex-row max-2xl:flex-col gap-6'>
         <div className=' flex-1 h-full'>
           <section ion className='flex flex-row justify-between mb-2 mt-2'>
             <div className=''>

@@ -11,9 +11,9 @@ export default function Index() {
   }
   const liStyle = 'hover:text-blue-400 cursor-pointer';
   const basicStyle =
-    'border border-black py-4 font-sans text-black text-lg font-normal px-2';
+    'border border-black py-4 font-sans text-black text-lg font-normal px-2 max-lg:text-sm';
   const leftStyle =
-    'border border-black py-4 font-sans text-black text-lg font-semibold w-1/3 bg-gray-100 text-center';
+    'border border-black py-4 font-sans text-black text-lg font-semibold w-1/3 bg-gray-100 text-center max-lg:text-sm';
   return (
     <div>
       <section className='pt-6'>
@@ -23,7 +23,7 @@ export default function Index() {
         <h3 className='font-sans text-2xl text-black font-semibold'>
           연구실 목록
         </h3>
-        <ul className='font-sans text-xl text-black font-normal flex flex-col gap-2 list-inside list-disc'>
+        <ul className='font-sans text-xl max-lg:text-lg  text-black font-normal flex flex-col gap-2 list-inside list-disc'>
           {labData.map((data, index) => (
             <li
               key={index}

@@ -58,7 +58,7 @@ export default function HomeBanner() {
 
   return (
     <section className='bg-gray-300'>
-      <div className='relative mx-40'>
+      <div className='relative mx-40 max-xl:mx-16 max-md:mx-0'>
         <Image
           src={`/imgs/banner1.jpg`}
           alt={`banner1`}

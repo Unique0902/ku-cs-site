@@ -8,7 +8,7 @@ export default function MiniList({ data, firstLocation, secondLocation }) {
           <BsDot className='text-black text-xl' />
           <Link
             href={`${firstLocation}/${secondLocation}/${data.id}`}
-            className='font-sans font-semibold text-black text-lg hover:text-blue-400'
+            className='font-sans font-semibold text-black text-lg max-sm:text-xs hover:text-blue-400'
           >
             {data.title.length > 21
               ? `${data.title.substr(0, 21)} ...`

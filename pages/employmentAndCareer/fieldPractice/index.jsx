@@ -4,13 +4,13 @@ import SubTitle from '../../../components/subTitle';
 export default function Index() {
   return (
     <>
-      <section className='pt-6 flex flex-col gap-4'>
+      <section className='pt-6 flex flex-col gap-4 w-full'>
         <SubTitle
           text={
             '학교의 현장실습(인턴) 프로그램에 참여하는 경우, 기업에서 현장 실무를 배우고, 학점을 취득하며, 소정의 실습 지원비 수령이 가능합니다.'
           }
         />
-        <ul className='list-disc list-inside font-sans font-normal text-gray-600 text-xl flex flex-col gap-2'>
+        <ul className='list-disc list-inside font-sans font-normal text-gray-600 text-xl flex flex-col gap-2 max-md:text-sm'>
           <li>4학기 수료 이상 학생 참여 가능</li>
           <li>
             하루 8시간, 주 5일 full-time 근무 필요하므로, 학교 교과목 수강과
@@ -44,7 +44,7 @@ export default function Index() {
       </section>
       <section className='pt-10 flex flex-col gap-4'>
         <SubTitle text={'1.교내 현장실습(인턴)'} />
-        <ul className='list-disc list-inside font-sans font-normal text-gray-600 text-xl flex flex-col gap-2'>
+        <ul className='list-disc list-inside font-sans font-normal text-gray-600 text-xl flex flex-col gap-2 max-md:text-sm'>
           <li>
             현장실습지원센터(
             <a href='http://field.konkuk.ac.kr' className='text-blue-500'>
@@ -74,7 +74,7 @@ export default function Index() {
       </section>
       <section className='pt-10 flex flex-col gap-4'>
         <SubTitle text={'2.과기부 ICT 학점연계 프로젝트 인턴십(ICT 인턴십)'} />
-        <ul className='list-disc list-inside font-sans font-normal text-gray-600 text-xl flex flex-col gap-2'>
+        <ul className='list-disc list-inside font-sans font-normal text-gray-600 text-xl flex flex-col gap-2 max-md:text-sm'>
           <li>
             과기부 ICT 인턴십(
             <a href='http://internnet.hanium.or.kr' className='text-blue-500'>
@@ -99,7 +99,7 @@ export default function Index() {
       </section>
       <section className='pt-10 flex flex-col gap-4'>
         <SubTitle text={'3.(재)산학협동재단의 "스타트업 대학생 인턴 장학생"'} />
-        <ul className='list-disc list-inside font-sans font-normal text-gray-600 text-xl flex flex-col gap-2'>
+        <ul className='list-disc list-inside font-sans font-normal text-gray-600 text-xl flex flex-col gap-2 max-md:text-sm'>
           <li>
             (재)산학협동재단(
             <a href='http://sanhakfund.or.kr' className='text-blue-500'>

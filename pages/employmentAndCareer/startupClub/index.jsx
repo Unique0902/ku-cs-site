@@ -10,7 +10,7 @@ export default function Index() {
             '자신의 관심 분야에서 문제 해결 아이디어를 함께 실현 및 검증에 도전하는 스타트업 클럽 활동은 실제 사회에서의 다양한 경험을 통한 역량 향상 뿐만 아니라 자신의 적성을 검증할 수 있는 좋은 기회입니다.'
           }
         />
-        <ul className='list-disc list-inside font-sans font-normal text-gray-600 text-xl flex flex-col gap-2'>
+        <ul className='list-disc list-inside font-sans font-normal text-gray-600 text-xl flex flex-col gap-2 max-md:text-sm'>
           <li>
             스타트업 클럽 관련 상담: 김재군 교수 (
             <a href='jaygkim@konkuk.ac.kr' className='text-blue-500'>

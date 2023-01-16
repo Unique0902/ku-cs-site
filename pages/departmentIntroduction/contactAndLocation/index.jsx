@@ -29,7 +29,7 @@ export default function Index() {
           alt={'csMap2'}
           width={600}
           height={300}
-          className='w-3/4 mt-2 h-auto'
+          className='w-3/4 mt-2 h-auto max-lg:w-full'
         />
       </section>
       <section className='pt-12'>
@@ -37,7 +37,7 @@ export default function Index() {
         <table
           border={'1'}
           bordercolor={'blue'}
-          className='w-full border-t-2 border-black font-sans text-2xl text-center'
+          className='w-full border-t-2 border-black font-sans text-2xl text-center max-lg:text-xl'
         >
           <tbody>
             <tr>
@@ -64,7 +64,7 @@ export default function Index() {
         <table
           border={'1'}
           bordercolor={'blue'}
-          className='w-full border-t-2 border-black font-sans text-2xl text-center'
+          className='w-full border-t-2 border-black font-sans text-2xl text-center max-lg:text-xl'
         >
           <tbody>
             <tr>

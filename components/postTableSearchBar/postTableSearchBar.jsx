@@ -34,14 +34,14 @@ export default function PostTableSearchBar({
 
   return (
     <form
-      className='font-sans flex flex-row justify-end items-center h-10 gap-2'
+      className='font-sans flex flex-row max-md:flex-col justify-end items-center h-10 max-md:h-auto gap-2'
       onSubmit={handleSubmit}
     >
       <select
         name='type'
         value={searchWord.type}
         onChange={handleChange}
-        className='text-xl font-normal text-black border border-black h-full'
+        className='text-xl font-normal text-black border border-black h-full max-md:w-4/5'
       >
         <option value='제목+내용'>제목+내용</option>
         <option value='제목'>제목</option>
@@ -53,9 +53,9 @@ export default function PostTableSearchBar({
         value={searchWord.name}
         onChange={handleChange}
         placeholder='검색어 입력'
-        className='text-xl font-normal text-black border border-black h-full px-2'
+        className='text-xl font-normal text-black border border-black h-full px-2 max-md:w-4/5'
       />
-      <button className='px-10 h-full bg-gray-800 font-semibold text-xl text-white'>
+      <button className='px-10 h-full bg-gray-800 font-semibold text-xl text-white max-md:w-4/5 max-md:py-4'>
         검색
       </button>
     </form>

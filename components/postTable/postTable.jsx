@@ -9,7 +9,7 @@ export default function PostTable({ noticeData, data, searchOption, pageNum }) {
   if (searchOption.viewType === 'dashboard') {
     return (
       <table className='w-full'>
-        <thead className='text-center bg-gray-200 border-t-4 border-b border-t-black border-b-gray-400 h-12 font-semibold text-lg'>
+        <thead className='max-md:hidden text-center bg-gray-200 border-t-4 border-b border-t-black border-b-gray-400 h-12 font-semibold text-lg max-lg:text-sm'>
           <tr>
             <td>번호</td>
             <td>제목</td>
@@ -23,9 +23,11 @@ export default function PostTable({ noticeData, data, searchOption, pageNum }) {
             noticeData.map((data, index) => (
               <tr
                 key={index}
-                className='text-center bg-yellow-100 border-t border-b  border-gray-400 h-12 font-normal text-lg'
+                className='text-center bg-yellow-100 border-t border-b  border-gray-400 h-12 font-normal text-lg max-lg:text-sm'
               >
-                <td className='font-semibold text-red-500'>[공지]</td>
+                <td className='font-semibold text-red-500 max-md:hidden'>
+                  [공지]
+                </td>
                 <td className='text-left font-semibold '>
                   <Link
                     href={`${router.pathname}/${data.id}`}
@@ -34,12 +36,14 @@ export default function PostTable({ noticeData, data, searchOption, pageNum }) {
                     {data.title.length > 32
                       ? `${data.title.slice(0, 32)}...`
                       : data.title}
-                    {data.file && <FiPaperclip className='text-2xl' />}
+                    {data.file && (
+                      <FiPaperclip className='text-2xl max-md:hidden' />
+                    )}
                   </Link>
                 </td>
                 <td>{data.author}</td>
                 <td>{data.time}</td>
-                <td>{data.view}</td>
+                <td className='max-md:hidden'>{data.view}</td>
               </tr>
             ))}
           {data
@@ -50,9 +54,9 @@ export default function PostTable({ noticeData, data, searchOption, pageNum }) {
             .map((dt, index) => (
               <tr
                 key={index}
-                className='text-center bg-white border-t border-b  border-gray-400 h-12 font-normal text-lg'
+                className='text-center bg-white border-t border-b  border-gray-400 h-12 font-normal text-lg max-lg:text-sm'
               >
-                <td className=''>
+                <td className='max-md:hidden'>
                   {data.length -
                     index -
                     searchOption.showNum * (pageNum.now - 1)}
@@ -65,12 +69,14 @@ export default function PostTable({ noticeData, data, searchOption, pageNum }) {
                     {dt.title.length > 32
                       ? `${dt.title.slice(0, 32)}...`
                       : dt.title}
-                    {dt.file && <FiPaperclip className='text-2xl' />}
+                    {dt.file && (
+                      <FiPaperclip className='text-2xl max-md:hidden' />
+                    )}
                   </Link>
                 </td>
                 <td>{dt.author}</td>
                 <td>{dt.time}</td>
-                <td>{dt.view}</td>
+                <td className='max-md:hidden'>{dt.view}</td>
               </tr>
             ))}
         </tbody>
@@ -87,7 +93,10 @@ export default function PostTable({ noticeData, data, searchOption, pageNum }) {
             searchOption.showNum * pageNum.now
           )
           .map((dt) => (
-            <li className='w-1/4 p-3 mb-12 '>
+            <li
+              key={dt.id}
+              className='w-1/4 p-3 mb-12 max-xl:w-1/3 max-md:w-1/2 max-sm:w-full'
+            >
               <Link
                 href={`${router.pathname}/${dt.id}`}
                 className='flex flex-col gap-2'

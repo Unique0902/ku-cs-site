@@ -17,7 +17,7 @@ export default function MainLayout({ children }) {
     checkLocation();
   }, [router]);
   return (
-    <main className='px-40 flex flex-row gap-8'>
+    <main className='px-40 flex flex-row gap-8 max-xl:px-16 max-md:px-8'>
       <MainSide
         firstName={
           navMenuData[firstLocation] ? navMenuData[firstLocation].name : ''

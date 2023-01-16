@@ -12,7 +12,7 @@ export default function Index() {
         alt='professorBanner'
         width={500}
         height={500}
-        className='w-3/5 h-auto py-5'
+        className='w-3/5 h-auto py-5 max-xl:w-full'
       />
       <div className='flex flex-row gap-1 items-center border-b-4 border-gray-600 pb-2'>
         <CgShapeCircle className='text-yellow-400 text-3xl' />

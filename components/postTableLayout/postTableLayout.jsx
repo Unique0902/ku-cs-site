@@ -34,11 +34,14 @@ export default function PostTableLayout({ originData, originNoticeData }) {
         setSearchOption={setSearchOption}
         originData={originData}
       />
-      <PostTableBtnBar
-        totalNum={data.length}
-        searchOption={searchOption}
-        setSearchOption={setSearchOption}
-      />
+      <div className='max-md:hidden'>
+        <PostTableBtnBar
+          totalNum={data.length}
+          searchOption={searchOption}
+          setSearchOption={setSearchOption}
+        />
+      </div>
+
       <PostTable
         noticeData={noticeData}
         data={data}
@@ -46,6 +49,13 @@ export default function PostTableLayout({ originData, originNoticeData }) {
         pageNum={pageNum}
       />
       <PostTablePageBar pageNum={pageNum} setPageNum={setPageNum} />
+      <div className='md:hidden'>
+        <PostTableBtnBar
+          totalNum={data.length}
+          searchOption={searchOption}
+          setSearchOption={setSearchOption}
+        />
+      </div>
     </section>
   );
 }

@@ -12,7 +12,7 @@ export default function Professor({
   homePage,
 }) {
   return (
-    <section className='flex flex-row p-4 gap-6 border-b border-gray-300'>
+    <section className='flex flex-row max-md:flex-col p-4 gap-6 border-b border-gray-300'>
       <Image
         src={'/imgs/person.jpg'}
         alt={'person'}
