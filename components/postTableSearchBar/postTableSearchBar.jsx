@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { announcementData } from '../../data/announcement';
 
 export default function PostTableSearchBar({
   data,
   setData,
   searchOption,
   setSearchOption,
+  originData,
 }) {
   const [searchWord, setSearchWord] = useState({ type: '제목+내용', name: '' });
   const handleSubmit = (e) => {
@@ -13,20 +13,16 @@ export default function PostTableSearchBar({
     setSearchOption({ ...searchOption, isShowNotice: false });
     if (searchWord.type === '제목+내용') {
       setData(
-        announcementData.filter(
+        originData.filter(
           (dt) =>
             dt.title.includes(searchWord.name) ||
             dt.content.includes(searchWord.name)
         )
       );
     } else if (searchWord.type === '제목') {
-      setData(
-        announcementData.filter((dt) => dt.title.includes(searchWord.name))
-      );
+      setData(originData.filter((dt) => dt.title.includes(searchWord.name)));
     } else if (searchWord.type === '내용') {
-      setData(
-        announcementData.filter((dt) => dt.content.includes(searchWord.name))
-      );
+      setData(originData.filter((dt) => dt.content.includes(searchWord.name)));
     }
   };
   const handleChange = (e) => {

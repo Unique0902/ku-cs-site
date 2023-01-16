@@ -1,16 +1,16 @@
 import React from 'react';
 import DetailLayout from '../../../components/detailLayout/detailLayout';
 import {
-  announcementData,
-  noticeAnnouncementData,
-} from '../../../data/announcement';
+  recruitmentInformationData,
+  noticeRecruitmentInformationData,
+} from '../../../data/recruitmentInformation';
 import { getMainLayOut } from '../../../layouts/appLayout';
 
 export default function Detail() {
   return (
     <DetailLayout
-      originData={announcementData}
-      originNoticeData={noticeAnnouncementData}
+      originData={recruitmentInformationData}
+      originNoticeData={noticeRecruitmentInformationData}
     />
   );
 }

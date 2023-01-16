@@ -25,7 +25,7 @@ export default function DetailTitle({ data }) {
             <td className={titleTdStyle}>첨부파일</td>
             <td
               colSpan={3}
-              className={`${tdStyle} flex flex-col justify-center h-16`}
+              className={`${tdStyle} flex flex-col justify-center h-auto`}
             >
               {data.file.map((fl) => (
                 <a

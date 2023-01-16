@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import {
-  announcementData,
-  noticeAnnouncementData,
-} from '../../data/announcement';
 import PostTable from '../postTable/postTable';
 import PostTableBtnBar from '../postTableBtnBar/postTableBtnBar';
 import PostTablePageBar from '../postTablePageBar/postTablePageBar';
 import PostTableSearchBar from '../postTableSearchBar/postTableSearchBar';
 
-export default function PostTableLayout() {
-  const [data, setData] = useState(announcementData);
-  const [noticeData, setNoticeData] = useState(noticeAnnouncementData);
+export default function PostTableLayout({ originData, originNoticeData }) {
+  const [data, setData] = useState(originData);
+  const [noticeData, setNoticeData] = useState(originNoticeData);
   const [searchOption, setSearchOption] = useState({
     viewType: 'dashboard',
     isShowNotice: true,
@@ -36,6 +32,7 @@ export default function PostTableLayout() {
         setData={setData}
         searchOption={searchOption}
         setSearchOption={setSearchOption}
+        originData={originData}
       />
       <PostTableBtnBar
         totalNum={data.length}
