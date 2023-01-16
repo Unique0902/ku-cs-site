@@ -1,7 +1,12 @@
 import React from 'react';
 import MainSideBtn from '../mainSideBtn/mainSideBtn';
 
-export default function MainSide({ data, secondLocation, firstName }) {
+export default function MainSide({
+  data,
+  secondLocation,
+  firstName,
+  firstLocation,
+}) {
   return (
     <aside className='pt-8'>
       <div className='font-sans border-b border-gray-300 text-green-600 font-bold text-3xl flex justify-center  h-48 w-72 bg-cover bg-circleLogo relative'>
@@ -12,6 +17,7 @@ export default function MainSide({ data, secondLocation, firstName }) {
         {data.map((data) => (
           <MainSideBtn
             key={data.url}
+            firstLocation={firstLocation}
             text={data.name}
             url={data.url}
             isSelected={secondLocation === data.url}

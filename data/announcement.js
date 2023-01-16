@@ -15,10 +15,8 @@ const noticeAnnouncementData = [
         url: 'https://cse.konkuk.ac.kr/file/fileDownLoad.do?seq=130786',
       },
     ],
-    img: [
-      '/imgs/graduateSchool-announcement/img1.png',
-      '/imgs/graduateSchool-announcement/img2.png',
-    ],
+    img: ['/imgs/graduateSchool-announcement/img1.png'],
+    id: 1,
   },
   {
     title: '2023학년도 대학원 학사일정 안내',
@@ -33,6 +31,7 @@ const noticeAnnouncementData = [
       },
     ],
     img: [],
+    id: 2,
   },
 ];
 
@@ -53,10 +52,8 @@ const announcementData = [
         url: 'https://cse.konkuk.ac.kr/file/fileDownLoad.do?seq=130786',
       },
     ],
-    img: [
-      '/imgs/graduateSchool-announcement/img1.png',
-      '/imgs/graduateSchool-announcement/img2.png',
-    ],
+    img: ['/imgs/graduateSchool-announcement/img1.png'],
+    id: 3,
   },
   {
     title: '2023학년도 1학기 대학원 전과 신청 안내',
@@ -74,10 +71,8 @@ const announcementData = [
         url: 'https://cse.konkuk.ac.kr/file/fileDownLoad.do?seq=130786',
       },
     ],
-    img: [
-      '/imgs/graduateSchool-announcement/img1.png',
-      '/imgs/graduateSchool-announcement/img2.png',
-    ],
+    img: ['/imgs/graduateSchool-announcement/img1.png'],
+    id: 4,
   },
   {
     title: '2023학년도 1학기 대학원 전과 신청 안내',
@@ -95,10 +90,8 @@ const announcementData = [
         url: 'https://cse.konkuk.ac.kr/file/fileDownLoad.do?seq=130786',
       },
     ],
-    img: [
-      '/imgs/graduateSchool-announcement/img1.png',
-      '/imgs/graduateSchool-announcement/img2.png',
-    ],
+    img: ['/imgs/graduateSchool-announcement/img1.png'],
+    id: 5,
   },
   {
     title: '2023학년도 1학기 대학원 전과 신청 안내',
@@ -116,10 +109,8 @@ const announcementData = [
         url: 'https://cse.konkuk.ac.kr/file/fileDownLoad.do?seq=130786',
       },
     ],
-    img: [
-      '/imgs/graduateSchool-announcement/img1.png',
-      '/imgs/graduateSchool-announcement/img2.png',
-    ],
+    img: ['/imgs/graduateSchool-announcement/img1.png'],
+    id: 6,
   },
   {
     title: '2023학년도 1학기 대학원 전과 신청 안내',
@@ -137,10 +128,8 @@ const announcementData = [
         url: 'https://cse.konkuk.ac.kr/file/fileDownLoad.do?seq=130786',
       },
     ],
-    img: [
-      '/imgs/graduateSchool-announcement/img1.png',
-      '/imgs/graduateSchool-announcement/img2.png',
-    ],
+    img: ['/imgs/graduateSchool-announcement/img1.png'],
+    id: 7,
   },
   {
     title: '2023학년도 1학기 대학원 전과 신청 안내',
@@ -158,10 +147,8 @@ const announcementData = [
         url: 'https://cse.konkuk.ac.kr/file/fileDownLoad.do?seq=130786',
       },
     ],
-    img: [
-      '/imgs/graduateSchool-announcement/img1.png',
-      '/imgs/graduateSchool-announcement/img2.png',
-    ],
+    img: ['/imgs/graduateSchool-announcement/img1.png'],
+    id: 8,
   },
   {
     title: '2023학년도 1학기 대학원 전과 신청 안내',
@@ -179,10 +166,8 @@ const announcementData = [
         url: 'https://cse.konkuk.ac.kr/file/fileDownLoad.do?seq=130786',
       },
     ],
-    img: [
-      '/imgs/graduateSchool-announcement/img1.png',
-      '/imgs/graduateSchool-announcement/img2.png',
-    ],
+    img: ['/imgs/graduateSchool-announcement/img1.png'],
+    id: 9,
   },
   {
     title: '2023학년도 1학기 대학원 전과 신청 안내',
@@ -200,10 +185,8 @@ const announcementData = [
         url: 'https://cse.konkuk.ac.kr/file/fileDownLoad.do?seq=130786',
       },
     ],
-    img: [
-      '/imgs/graduateSchool-announcement/img1.png',
-      '/imgs/graduateSchool-announcement/img2.png',
-    ],
+    img: ['/imgs/graduateSchool-announcement/img1.png'],
+    id: 10,
   },
   {
     title: '2023학년도 1학기 대학원 전과 신청 안내',
@@ -221,10 +204,8 @@ const announcementData = [
         url: 'https://cse.konkuk.ac.kr/file/fileDownLoad.do?seq=130786',
       },
     ],
-    img: [
-      '/imgs/graduateSchool-announcement/img1.png',
-      '/imgs/graduateSchool-announcement/img2.png',
-    ],
+    img: ['/imgs/graduateSchool-announcement/img1.png'],
+    id: 11,
   },
   {
     title: '2023학년도 1학기 대학원 전과 신청 안내',
@@ -242,10 +223,8 @@ const announcementData = [
         url: 'https://cse.konkuk.ac.kr/file/fileDownLoad.do?seq=130786',
       },
     ],
-    img: [
-      '/imgs/graduateSchool-announcement/img1.png',
-      '/imgs/graduateSchool-announcement/img2.png',
-    ],
+    img: ['/imgs/graduateSchool-announcement/img1.png'],
+    id: 12,
   },
   {
     title: '2023학년도 1학기 대학원 전과 신청 안내',
@@ -263,10 +242,8 @@ const announcementData = [
         url: 'https://cse.konkuk.ac.kr/file/fileDownLoad.do?seq=130786',
       },
     ],
-    img: [
-      '/imgs/graduateSchool-announcement/img1.png',
-      '/imgs/graduateSchool-announcement/img2.png',
-    ],
+    img: ['/imgs/graduateSchool-announcement/img1.png'],
+    id: 13,
   },
   {
     title:
@@ -285,10 +262,8 @@ const announcementData = [
         url: 'https://cse.konkuk.ac.kr/file/fileDownLoad.do?seq=130786',
       },
     ],
-    img: [
-      '/imgs/graduateSchool-announcement/img1.png',
-      '/imgs/graduateSchool-announcement/img2.png',
-    ],
+    img: ['/imgs/graduateSchool-announcement/img1.png'],
+    id: 14,
   },
   {
     title: '2023학년도 대학원 학사일정 안내',
@@ -303,6 +278,7 @@ const announcementData = [
       },
     ],
     img: [],
+    id: 15,
   },
 ];
 export { noticeAnnouncementData, announcementData };

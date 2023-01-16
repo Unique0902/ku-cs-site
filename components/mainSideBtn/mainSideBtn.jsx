@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import { SlArrowRight } from 'react-icons/sl';
 import { BsDashLg } from 'react-icons/bs';
 import { useRouter } from 'next/router';
-export default function MainSideBtn({ text, isSelected, url }) {
+export default function MainSideBtn({ text, isSelected, url, firstLocation }) {
   const [isHovering, setIsHovering] = useState(false);
   const router = useRouter();
   const handleClick = () => {
-    router.push(`${url}`);
+    router.push(`/${firstLocation}/${url}`);
   };
   return (
     <li

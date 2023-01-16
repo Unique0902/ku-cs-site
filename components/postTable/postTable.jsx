@@ -2,7 +2,10 @@ import React from 'react';
 import Link from 'next/link';
 import { FiPaperclip } from 'react-icons/fi';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
+
 export default function PostTable({ noticeData, data, searchOption, pageNum }) {
+  const router = useRouter();
   if (searchOption.viewType === 'dashboard') {
     return (
       <table className='w-full'>
@@ -25,7 +28,7 @@ export default function PostTable({ noticeData, data, searchOption, pageNum }) {
                 <td className='font-semibold text-red-500'>[공지]</td>
                 <td className='text-left font-semibold '>
                   <Link
-                    href={'sfs'}
+                    href={`${router.pathname}/${data.id}`}
                     className='flex flex-row items-center gap-2'
                   >
                     {data.title.length > 32
@@ -56,8 +59,8 @@ export default function PostTable({ noticeData, data, searchOption, pageNum }) {
                 </td>
                 <td className='text-left'>
                   <Link
-                    href={'sfs'}
-                    className='flex flex-row items-center gap-2'
+                    href={`${router.pathname}/${dt.id}`}
+                    className='flex flex-row items-center gap-2 hover:text-green-600'
                   >
                     {dt.title.length > 32
                       ? `${dt.title.slice(0, 32)}...`
@@ -85,7 +88,10 @@ export default function PostTable({ noticeData, data, searchOption, pageNum }) {
           )
           .map((dt) => (
             <li className='w-1/4 p-3 mb-12 '>
-              <Link href={'sfs'} className='flex flex-col gap-2'>
+              <Link
+                href={`${router.pathname}/${dt.id}`}
+                className='flex flex-col gap-2'
+              >
                 <Image
                   src={dt.img.length > 0 ? dt.img[0] : '/imgs/ready.jpg'}
                   alt={dt.title}

@@ -22,6 +22,7 @@ export default function MainLayout({ children }) {
         firstName={
           navMenuData[firstLocation] ? navMenuData[firstLocation].name : ''
         }
+        firstLocation={firstLocation}
         secondLocation={secondLocation}
         data={navMenuData[firstLocation] ? navMenuData[firstLocation].data : []}
       />
