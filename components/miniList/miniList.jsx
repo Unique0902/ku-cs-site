@@ -1,15 +1,19 @@
 import { BsDot } from 'react-icons/bs';
-export default function MiniList({ data }) {
+import Link from 'next/link';
+export default function MiniList({ data, firstLocation, secondLocation }) {
   return (
     <li>
       <div className='flex flex-row items-center justify-between h-8'>
         <div className='flex flex-row items-center'>
           <BsDot className='text-black text-xl' />
-          <button className='font-sans font-semibold text-black text-lg hover:text-blue-400'>
+          <Link
+            href={`${firstLocation}/${secondLocation}/${data.id}`}
+            className='font-sans font-semibold text-black text-lg hover:text-blue-400'
+          >
             {data.title.length > 21
               ? `${data.title.substr(0, 21)} ...`
               : data.title}
-          </button>
+          </Link>
         </div>
 
         <p className='font-sans font-medium text-gray-400 text-sm'>

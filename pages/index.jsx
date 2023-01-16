@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useState } from 'react';
 import HomeBanner from '../components/homeBanner';
 import MiniLists from '../components/miniLists/miniLists';
@@ -42,16 +43,27 @@ export default function Home() {
               </button>
             </div>
             <div className='flex-1 flex flex-row justify-end items-center border-b border-gray-200'>
-              <button className='text-gray-400 font-semibold text-sm'>
+              <Link
+                href={'openYard/recruitmentInformation'}
+                className='text-gray-400 font-semibold text-sm'
+              >
                 +더보기
-              </button>
+              </Link>
             </div>
           </section>
           {clickedBtn === '학과공지' && (
-            <MiniLists dataArr={departmentNoticeData.slice(0, 5)} />
+            <MiniLists
+              dataArr={departmentNoticeData.slice(0, 5)}
+              firstLocation={'openYard'}
+              secondLocation={'departmentNotice'}
+            />
           )}
           {clickedBtn === '채용정보' && (
-            <MiniLists dataArr={recruitmentInformationData.slice(0, 5)} />
+            <MiniLists
+              dataArr={recruitmentInformationData.slice(0, 5)}
+              firstLocation={'openYard'}
+              secondLocation={'recruitmentInformation'}
+            />
           )}
         </div>
         <WholeMiniLists
@@ -59,6 +71,8 @@ export default function Home() {
           backTitle={'소식'}
           dataArr={departmentNoticeData.slice(0, 5)}
           isLink={false}
+          firstLocation={'openYard'}
+          secondLocation={'departmentNews'}
         />
         <WholeMiniLists
           dataArr={departmentNoticeData.slice(0, 5)}

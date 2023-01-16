@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 import LinkList from '../linkList/linkList';
 import MiniLists from '../miniLists/miniLists';
@@ -7,6 +8,8 @@ export default function WholeMiniLists({
   backTitle,
   dataArr,
   isLink,
+  firstLocation,
+  secondLocation,
 }) {
   return (
     <div className=' flex-1'>
@@ -20,12 +23,21 @@ export default function WholeMiniLists({
           </p>
         </div>
         {!isLink && (
-          <button className='text-gray-400 font-semibold text-sm mt-5'>
+          <Link
+            href={`${firstLocation}/${secondLocation}`}
+            className='text-gray-400 font-semibold text-sm mt-5'
+          >
             +더보기
-          </button>
+          </Link>
         )}
       </section>
-      {!isLink && <MiniLists dataArr={dataArr} />}
+      {!isLink && (
+        <MiniLists
+          dataArr={dataArr}
+          firstLocation={firstLocation}
+          secondLocation={secondLocation}
+        />
+      )}
       {isLink && <LinkList />}
     </div>
   );
