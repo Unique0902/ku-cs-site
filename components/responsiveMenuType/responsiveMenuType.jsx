@@ -29,13 +29,12 @@ export default function ResponsiveMenuType({ data, setIsShowMenu }) {
       {isShowDetailMenu && (
         <ul className='flex flex-col gap-4 py-2'>
           {data.data.map((dt) => (
-            <li>
+            <li key={dt.url}>
               <Link
                 href={`/${data.engName}/${dt.url}`}
                 onClick={() => {
                   setIsShowMenu(false);
                 }}
-                key={dt.url}
                 className={`font-sans font-semibold text-xl max-md:text-lg pl-2 text-gray-600 ${
                   dt.url === locArr[2] && 'text-blue-500'
                 }`}

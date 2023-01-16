@@ -1,9 +1,4 @@
-import React, { useEffect } from 'react';
-import { useRouter } from 'next/router';
+import React from 'react';
 export default function index() {
-  const router = useRouter();
-  useEffect(() => {
-    router.push('/departmentIntroduction/educationalGoal');
-  }, []);
-  return <h1>loading..</h1>;
+  return <h1>...</h1>;
 }

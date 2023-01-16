@@ -44,7 +44,6 @@ export default function AppHeader() {
           </button>
           <a
             href='https://www.konkuk.ac.kr/do/Index.do'
-            target='_blank'
             className=' bg-green-800 flex justify-center items-center text-white text-2xl font-sans font-semibold rounded-xl px-4 py-3 hover:scale-105'
           >
             건국대학교

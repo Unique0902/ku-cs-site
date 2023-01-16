@@ -24,7 +24,6 @@ export default function AppFooter() {
       </div>
       <a
         href={'http://www.konkuk.ac.kr/jsp/Plaza/plaza_01_13.jsp'}
-        target='_blank'
         className='absolute right-0 max-md:relative max-md:text-center text-green-600 font-normal text-lg font-sans'
       >
         개인정보처리방침

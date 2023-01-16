@@ -5,10 +5,48 @@ import { getMainLayOut } from '../../../layouts/appLayout';
 
 export default function Index() {
   let refArr = [];
-  for (let i = 0; i < labData.length; i++) {
-    const tableRef = useRef();
-    refArr = [...refArr, tableRef];
-  }
+  const tableRef1 = useRef();
+  const tableRef2 = useRef();
+  const tableRef3 = useRef();
+  const tableRef4 = useRef();
+  const tableRef5 = useRef();
+  const tableRef6 = useRef();
+  const tableRef7 = useRef();
+  const tableRef8 = useRef();
+  const tableRef9 = useRef();
+  const tableRef10 = useRef();
+  const tableRef11 = useRef();
+  const tableRef12 = useRef();
+  const tableRef13 = useRef();
+  const tableRef14 = useRef();
+  const tableRef15 = useRef();
+  const tableRef16 = useRef();
+  const tableRef17 = useRef();
+  const tableRef18 = useRef();
+  const tableRef19 = useRef();
+  const tableRef20 = useRef();
+  refArr = [
+    tableRef1,
+    tableRef2,
+    tableRef3,
+    tableRef4,
+    tableRef5,
+    tableRef6,
+    tableRef7,
+    tableRef8,
+    tableRef9,
+    tableRef10,
+    tableRef11,
+    tableRef12,
+    tableRef13,
+    tableRef14,
+    tableRef15,
+    tableRef16,
+    tableRef17,
+    tableRef18,
+    tableRef19,
+    tableRef20,
+  ];
   const liStyle = 'hover:text-blue-400 cursor-pointer';
   const basicStyle =
     'border border-black py-4 font-sans text-black text-lg font-normal px-2 max-lg:text-sm';
