@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import HoverTextBtn from './hoverTextBtn/hoverTextBtn';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import ResponsiveMenu from './responsiveMenu/responsiveMenu';
 export default function AppHeader() {
+  const [isShowMenu, setIsShowMenu] = useState(false);
   const router = useRouter();
   const handleClick = () => router.push('/');
   return (
@@ -27,9 +29,15 @@ export default function AppHeader() {
             </h3>
           </button>
         </div>
-        <button className='xl:hidden '>
+        <button
+          className='xl:hidden'
+          onClick={() => {
+            setIsShowMenu(true);
+          }}
+        >
           <GiHamburgerMenu className='text-4xl' />
         </button>
+        {isShowMenu && <ResponsiveMenu setIsShowMenu={setIsShowMenu} />}
         <div className='max-xl:hidden flex flex-row items-center gap-4'>
           <button className=' bg-slate-400 text-white text-2xl font-sans font-semibold rounded-xl px-4 py-3 hover:scale-105'>
             로그인

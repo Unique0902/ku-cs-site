@@ -1,6 +1,7 @@
 const navMenuData = {
   departmentIntroduction: {
     name: '학과소개',
+    engName: 'departmentIntroduction',
     data: [
       { name: '교육목표', url: 'educationalGoal' },
       { name: '학부연혁', url: 'facultyHistory' },
@@ -9,6 +10,7 @@ const navMenuData = {
   },
   member: {
     name: '구성원',
+    engName: 'member',
     data: [
       { name: '전임교원', url: 'fullTimeFaculty' },
       { name: '직원', url: 'employee' },
@@ -17,6 +19,7 @@ const navMenuData = {
   },
   department: {
     name: '학부',
+    engName: 'department',
     data: [
       { name: '교과과정', url: 'curriculum' },
       { name: '로드맵', url: 'roadmap' },
@@ -28,6 +31,7 @@ const navMenuData = {
   },
   graduateSchool: {
     name: '대학원',
+    engName: 'graduateSchool',
     data: [
       { name: '교과과정', url: 'curriculum' },
       { name: '연구실 소개', url: 'labIntroduction' },
@@ -36,6 +40,7 @@ const navMenuData = {
   },
   employmentAndCareer: {
     name: '취업및진로',
+    engName: 'employmentAndCareer',
     data: [
       { name: '가능한 진로', url: 'possibleCareerPath' },
       { name: '현장실습', url: 'fieldPractice' },
@@ -44,6 +49,7 @@ const navMenuData = {
   },
   openYard: {
     name: '열린마당',
+    engName: 'openYard',
     data: [
       { name: '학과공지', url: 'departmentNotice' },
       { name: '채용정보', url: 'recruitmentInformation' },
